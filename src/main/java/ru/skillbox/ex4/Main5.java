@@ -1,19 +1,19 @@
 package ru.skillbox.ex4;
 
+import static ru.skillbox.ex4.Main4.divide100byInt;
+
 public class Main5 {
     public static void main(String[] args) {
-       // divide100byInt(20);
-        //divide100byInt(0);
-        //divide100byInt(10);
     }
 
     /**
      * @param a - int
-     * @throws InvalidParameterException выбрасывается если входной параметр равен 0
+     * @throws InvalidZeroParameterException выбрасывается если входной параметр равен 0
      */
-    static void divide100byInt(int a) throws InvalidParameterException {
+    static void openConnections(int a) throws InvalidZeroParameterException {
         if (a == 0)
-            throw new InvalidParameterException();
-        System.out.println(100 / a);
+            throw new InvalidZeroParameterException();
+        //....
+        divide100byInt(a);
     }
 }
